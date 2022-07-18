@@ -1,0 +1,60 @@
+@import url(sanitize.css);
+
+body {
+    width: 80%;
+    margin-right: auto;/*margn-left: auto と組み合わせることにより、中央ぞろえができる*/
+    margin-left: auto;
+}
+
+.container {
+    position: relative; /*これがないと、画像内の四隅の文字が、ウィンドウの四隅にちらばる*/
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 30px;
+}
+
+.image-vw{
+    width: 80vw; /*ウィンドウ幅に対して80％の表示*/
+    filter: drop-shadow(8px 8px 10px rgb(97, 86, 86)) /*フィルター処理＆影付き*/
+}
+
+.topleft {
+    position: absolute;
+    top: 2%;
+    left: 2%;
+    font-size: 18px;
+}
+
+.topright {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    font-size: 18px;
+}
+
+.bottomleft {
+    position: absolute;
+    bottom: 2%;
+    left: 2%;
+    font-size: 18px;
+}
+
+.bottomright {
+    position: absolute;
+    bottom: 2%;
+    right: 2%;
+    font-size: 18px;
+}
+
+.center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 18px;
+}
